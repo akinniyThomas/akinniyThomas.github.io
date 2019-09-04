@@ -1,0 +1,53 @@
+body {
+    background-color: rgb(86, 165, 116);
+    color: beige;
+}
+
+table tr:nth-child(even) {
+    background-color: rgb(181, 224, 145);
+    color: black;
+}
+
+table tr:nth-child(odd) {
+    background-color: rgb(66, 233, 24);
+    color: whitesmoke;
+}
+
+table {
+    background-color: rgb(86, 165, 116);
+    border-collapse: collapse;
+    width: 75%;
+    margin:auto;
+}
+
+img {
+    margin: auto;
+    width:auto;
+    display: block;
+}
+
+h1{
+    text-align: center;
+}
+
+ul li {
+    list-style: square  url("icons.png");
+}
+
+ul li ul li {
+    list-style: circle url("snoci.png");
+}
+
+td.colOne {
+    text-align: right;
+    border-right: rgb(58, 102, 98) solid 5px;
+    color: black;
+}
+
+em {
+    color: rgb(141, 138, 138);
+}
+
+#formClass{
+    text-align: center;
+}
