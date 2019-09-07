@@ -126,15 +126,15 @@
         <div>
             <h1> Contact Me</h1>
             <div id="formClass">
-                <form>
+                <form action="index.php" method="post" >
                     Full Name:<br>
-                    <input type="text" minlength="4" placeholder="Enter Name Here" id="fullName"><span id="nameError"></span><br>
+                    <input type="text" minlength="4" placeholder="Enter Name Here" id="fullName" name="fullName" ><span id="nameError"></span><br>
                     Email Address:<br>
-                    <input type="email" placeholder="Email Address Here" id="emailAddress"><br>
+                    <input type="email" placeholder="Email Address Here" id="emailAddress" name="emailAddress" ><br>
                     Title:<br>
-                    <input type="text" placeholder="Title" id="title"><br>
+                    <input type="text" placeholder="Title" id="title" name="title"><br>
                     Message:<br>
-                    <textarea placeholder="Message Here" rows="4" cols="20" minlength="25" id="message" ></textarea><br>
+                    <textarea placeholder="Message Here" rows="4" cols="20" minlength="25" id="message" name="message"  ></textarea><br>
                     <input type="submit" value="Send" id="contactButton">
                 </form>
             </div>
