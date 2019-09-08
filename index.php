@@ -10,7 +10,7 @@ if (isset($_POST['contactButton'])) {
     $fp = fopen('data.txt', 'a');
     fwrite($fp, $data);
     fclose($fp);
-    echo "<pre>Welcome " .$name. ", you are " .$email. " years old :)</pre>";
+    echo $data;
 }
 
 
