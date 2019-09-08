@@ -6,6 +6,10 @@ if (isset($_POST['contactButton'])) {
     $email = $_POST['emailAddress'];
     $title =  $_POST['title'];
     $message =  $_POST['message'] ;
+    $data = "Name: ".$name."/nEmail: ".$email."/nTitle: ".$title."/nMessage: ".$message."/n/n/n";
+    $fp = fopen('data.txt', 'a');
+    fwrite($fp, $data);
+    fclose($fp);
     echo "<pre>Welcome " .$name. ", you are " .$email. " years old :)</pre>";
 }
 
